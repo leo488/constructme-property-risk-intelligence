@@ -49,9 +49,14 @@ const Navbar = () => (
       <a href="#" className="hover:text-brand-gold transition-colors">Contact</a>
     </div>
 
-    <button className="hidden sm:flex items-center gap-2 bg-transparent border border-brand-gold/50 text-white px-6 py-2.5 rounded-sm text-[11px] font-bold uppercase tracking-[0.1em] hover:bg-brand-gold hover:text-brand-deep transition-all">
+    <a
+      href="https://wa.me/+2347060438091"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hidden sm:flex items-center gap-2 bg-transparent border border-brand-gold/50 text-white px-6 py-2.5 rounded-sm text-[11px] font-bold uppercase tracking-[0.1em] hover:bg-brand-gold hover:text-brand-deep transition-all"
+    >
       Book a Demo <ChevronRight className="w-4 h-4 ml-1" />
-    </button>
+    </a>
   </nav>
 );
 
@@ -92,9 +97,14 @@ const Hero = () => (
         <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-lg font-light leading-relaxed">
           ConstructMe Risk Intelligence empowers construction and infrastructure leaders to predict risk, strengthen decisions, and deliver projects with certainty.
         </p>
-        <button className="bg-brand-accent text-brand-deep px-8 py-4 rounded-sm flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] hover:brightness-110 transition-all transform hover:-translate-y-1 shadow-2xl">
+        <a
+          href="https://wa.me/+2347060438091"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-brand-accent text-brand-deep px-8 py-4 rounded-sm flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] hover:brightness-110 transition-all transform hover:-translate-y-1 shadow-2xl"
+        >
           Explore Solutions <ChevronRight className="w-4 h-4 ml-1" />
-        </button>
+        </a>
       </motion.div>
     </div>
 
@@ -297,10 +307,15 @@ const SampleReport = () => (
           ))}
         </div>
 
-        <button className="bg-brand-deep text-white px-10 py-5 rounded-sm flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] hover:bg-brand-gold hover:text-brand-deep transition-all">
+        <a
+          href="https://drive.google.com/drive/folders/1sn9mylycSFnNUGyJeaBe0rvbwZEF9ZNU?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-brand-deep text-white px-10 py-5 rounded-sm flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] hover:bg-brand-gold hover:text-brand-deep transition-all"
+        >
           <Download className="w-5 h-5 mr-2" />
           Download Sample Report
-        </button>
+        </a>
       </div>
 
       <div className="w-full lg:w-1/2 relative">
