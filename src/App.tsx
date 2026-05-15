@@ -161,9 +161,9 @@ const HiddenRisks = () => (
           { icon: AlertTriangle, title: "Forged or Duplicated Documents", desc: "Fake documents can make you lose everything." },
           { icon: Landmark, title: "Government Acquisition Exposure", desc: "Properties at risk of revocation or acquisition." },
         ].map((risk, i) => (
-          <div key={i} className="group">
-            <div className="mb-8 relative w-16 h-16 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-deep group-hover:text-white transition-all duration-700">
-               <risk.icon className="w-8 h-8 text-brand-gold" />
+          <div key={i} className="group bg-brand-accent/10 border border-brand-accent/25 p-8 hover:bg-brand-accent/20 transition-all duration-500">
+            <div className="mb-8 w-16 h-16 bg-brand-accent/40 flex items-center justify-center group-hover:bg-brand-accent transition-all duration-500">
+               <risk.icon className="w-8 h-8 text-brand-deep" />
             </div>
             <h4 className="text-lg mb-4 font-bold tracking-tight">{risk.title}</h4>
             <p className="text-sm text-gray-500 font-light leading-relaxed">{risk.desc}</p>
@@ -192,8 +192,10 @@ const Services = () => (
           { icon: Target, title: "Acquisition Advisory", desc: "Strategic guidance on negotiation, decision-making and deal structuring." },
         ].map((service, i) => (
           <div key={i} className="bg-white p-12 border border-gray-100 hover:shadow-2xl transition-all group relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-1 h-0 bg-brand-gold group-hover:h-full transition-all duration-500"></div>
-            <service.icon className="w-10 h-10 text-brand-gold mb-8 group-hover:scale-110 transition-transform duration-500" />
+            <div className="absolute top-0 left-0 w-1 h-0 bg-brand-accent group-hover:h-full transition-all duration-500"></div>
+            <div className="w-16 h-16 bg-brand-accent/20 flex items-center justify-center mb-8 group-hover:bg-brand-accent transition-all duration-500">
+              <service.icon className="w-8 h-8 text-brand-deep group-hover:scale-110 transition-transform duration-500" />
+            </div>
             <h4 className="text-xl font-bold mb-5 tracking-tight">{service.title}</h4>
             <p className="text-sm text-gray-500 leading-relaxed font-light mb-8">{service.desc}</p>
             <a href="https://wa.me/+2347060438091" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-[10px] uppercase font-bold tracking-[0.2em] text-brand-gold gap-2 group-hover:gap-4 transition-all">
