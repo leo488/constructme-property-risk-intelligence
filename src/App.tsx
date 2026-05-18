@@ -107,12 +107,10 @@ const Hero = () => (
             <MessageCircle className="w-4 h-4" /> Chat on WhatsApp <ChevronRight className="w-4 h-4 ml-1" />
           </a>
           <a
-            href="https://drive.google.com/drive/folders/1sn9mylycSFnNUGyJeaBe0rvbwZEF9ZNU?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-gray-400 text-[11px] font-bold uppercase tracking-[0.15em] hover:text-brand-gold transition-colors"
+            href="#sample-report"
+            className="border border-brand-accent text-brand-accent px-8 py-4 rounded-sm flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] hover:bg-brand-accent hover:text-brand-deep transition-all transform hover:-translate-y-1 shadow-2xl"
           >
-            <FileText className="w-4 h-4" /> View Sample Report
+            <FileText className="w-4 h-4" /> View Sample Report <ChevronRight className="w-4 h-4 ml-1" />
           </a>
         </div>
       </motion.div>
@@ -141,7 +139,7 @@ const Hero = () => (
 );
 
 const HiddenRisks = () => (
-  <section className="py-32 px-6 md:px-12 bg-white text-brand-deep relative">
+  <section className="py-32 px-6 md:px-12 bg-[#f0f4ef] text-brand-deep relative">
     <div className="max-w-7xl mx-auto">
       <div className="flex flex-col lg:flex-row justify-between items-end mb-24 gap-8">
         <div className="max-w-3xl">
@@ -175,7 +173,7 @@ const HiddenRisks = () => (
 );
 
 const Services = () => (
-  <section className="py-32 px-6 md:px-12 bg-gray-50 text-brand-deep">
+  <section className="py-32 px-6 md:px-12 bg-[#e8ede7] text-brand-deep">
     <div className="max-w-7xl mx-auto">
       <div className="text-center mb-24">
         <p className="text-[10px] text-brand-gold font-bold tracking-[0.3em] uppercase mb-4">Our Services</p>
@@ -243,7 +241,7 @@ const Process = () => (
 );
 
 const CaseStudy = () => (
-  <section className="py-32 px-6 md:px-12 bg-white text-brand-deep">
+  <section className="py-32 px-6 md:px-12 bg-[#f0f4ef] text-brand-deep">
     <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24 items-center">
       {/* Left: Testimonial Card */}
       <div className="w-full lg:w-1/2 relative">
@@ -285,7 +283,7 @@ const CaseStudy = () => (
 );
 
 const SampleReport = () => (
-  <section className="py-32 px-6 md:px-12 bg-white text-brand-deep border-t border-gray-100">
+  <section id="sample-report" className="py-32 px-6 md:px-12 bg-[#f0f4ef] text-brand-deep border-t border-brand-accent/20">
     <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
       {/* Left: Text */}
       <div className="w-full lg:w-1/2">
@@ -308,15 +306,24 @@ const SampleReport = () => (
           ))}
         </div>
 
-        <a
-          href="https://drive.google.com/drive/folders/1sn9mylycSFnNUGyJeaBe0rvbwZEF9ZNU?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-brand-deep text-white px-10 py-5 rounded-sm inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] hover:bg-brand-gold hover:text-brand-deep transition-all mb-4"
-        >
-          <Download className="w-5 h-5 mr-2" />
-          Download Sample Report
-        </a>
+        <div className="flex flex-wrap gap-4 mb-4">
+          <a
+            href="/HIGH-RISK.jpeg"
+            download="ConstructMe-High-Risk-Sample.jpeg"
+            className="bg-brand-deep text-white px-8 py-4 rounded-sm inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] hover:bg-brand-gold hover:text-brand-deep transition-all"
+          >
+            <Download className="w-4 h-4" />
+            High Risk Sample
+          </a>
+          <a
+            href="/LOW-RISK.jpeg"
+            download="ConstructMe-Low-Risk-Sample.jpeg"
+            className="border border-brand-deep text-brand-deep px-8 py-4 rounded-sm inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] hover:bg-brand-deep hover:text-white transition-all"
+          >
+            <Download className="w-4 h-4" />
+            Low Risk Sample
+          </a>
+        </div>
         <p className="text-xs text-gray-400 font-light mt-4">See the quality of our analysis before you engage.</p>
       </div>
 

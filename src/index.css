@@ -11,6 +11,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-brand-deep text-white font-sans antialiased;
   }
